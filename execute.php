@@ -46,6 +46,10 @@
 		//i parametri sono cosa voglio mandare indietro al mio utente, rimando il testo che
 		//ho ricevuto e che si trova nella variabile $text
 		$parameters = array('chat_id' => $chatId, "text" => $text);
+		If($text='data'){
+		$text="la data odierna è:".date("d.m.a")
+		$parameters=array('chat_id' =>$chatId, "text" =>$text);
+		}
 		
 	
 		
